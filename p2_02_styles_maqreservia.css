@@ -36,7 +36,7 @@ header
     flex-direction: row-reverse;
     justify-content: space-between; 
     height: 100px;   
-    border: blue 1px solid; 
+    
 }
 
 /*bloc menu*/
@@ -47,7 +47,7 @@ nav ul
     margin-top: 50px;
     margin-right: 40px;
     list-style-type: none;
-    border: blue 1px solid;
+    
 }
 nav a
 {
@@ -154,9 +154,15 @@ form
 }
 input
 { 
+    
     height: 29px;
     margin-left: -5px;
-    border: 1px solid  #F2F2F2;    
+    border: 1px solid  #F2F2F2;  
+
+}
+input:focus
+{
+    outline: 0;
 }
 .bouton_rechercher
 {
