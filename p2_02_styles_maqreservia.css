@@ -13,15 +13,13 @@
     font-weight: normal;
     font-style: normal;
 }
-body
-{
-    background-color: #1d2022;
-}
+
 #main_wrapper
 {
     width: 1200px;
     margin:auto;
     background-color: white;
+    border: solid 2px #F2F2F2;
     font-family: 'ralewayregular', Arial, Helvetica, sans-serif;        
 }
 h2
@@ -36,8 +34,9 @@ header
     flex-direction: row-reverse;
     justify-content: space-between; 
     height: 100px;   
-    
 }
+
+
 
 /*bloc menu*/
 nav ul 
@@ -53,9 +52,7 @@ nav a
 {
     text-decoration: none;
     color: black;
-    margin-left: 60px; 
-    
-    
+    margin-left: 60px;    
 }
 nav a:hover
 {
@@ -69,64 +66,103 @@ nav a:hover
     color: #0065FC;
 }
 
+
+  /*debut responsive queries jusqu'a ligne 35 html*/
+@media all and (max-width: 1024px)      
+{
+    #main_wrapper
+    {
+        width: auto;
+    }
+    h2
+    {
+        font-size: 1.3em;
+    }
+    header
+    {
+        width: auto;
+        height: 150px;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+        border-bottom: solid 3px #F2F2F2; 
+        position: relative;
+    }
+    header img
+    {
+        height: 50px;
+    }
+    nav ul
+    {
+        width: 500px;  
+        padding-left: 0; 
+        margin-bottom: 0;
+        height: 40px;
+    }
+    nav a
+    {
+        width: auto;
+        margin-left: 0;  
+    }
+    nav a:hover
+    {
+        padding-top: 0;
+        border-top: 0;
+    }
+    #hebergement
+    {
+        width: 50%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2em;
+    }
+    #hebergement:hover
+    {
+        border-bottom: solid 3px #0065FC;
+    }
+    #activite
+    {
+        width: 50%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2em;
+    }
+    #activite:hover
+    {
+        border-bottom: solid 3px #0065FC;
+    }
+    .menu_sinscrire
+    {
+        position: absolute;
+        top: 40px;
+        left: 350px;
+        font-size: 1.2em;
+    }
+    .logodusite
+    {
+        position: absolute;
+        top: 20px; 
+    }
+    .def_reservia 
+    {
+        width: auto;
+        font-size: 1.2em;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+}
+/*fin responsive queries jusqu'a ligne 35 html*/
+
+
 /*bloc logo principal*/
 .logodusite
 {  
     display: flex;
     align-items: flex-end;
     width: 200px;
-    margin-left: 20px;
-    
-}
-
-
-@media all and (max-width: 1024px)
-{
-    header
-    {
-        height: 150px;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        position: relative;
-        
-    }
-    nav ul
-    {
-        border: blue 1px solid;
-        width: 450px;
-        margin-right: 0px;
-        flex-direction: row-reverse;
-        align-items: flex-start;
-        flex-wrap: wrap-reverse;
-        
-        
-
-    }
-    nav li
-    {
-        width: 200px;
-        
-        flex-wrap: wrap;
-    }
-    nav a
-    {
-        border: red 1px solid;
-        margin-left: 0px;
-        
-        
-        
-
-    }
-    .logodusite
-    {
-        position: absolute;
-        top: 20px;
-        
-        
-        
-        
-        
-    }
+    margin-left: 20px;   
 }
 
 /*titre et definition du site*/
@@ -140,7 +176,8 @@ nav a:hover
 form
 {
     width: 400px;
-    margin-left: 20px;   
+    margin-left: 20px;
+    margin-bottom: 40px;   
 }
 .fa-map-marker
 {
@@ -154,15 +191,9 @@ form
 }
 input
 { 
-    
     height: 29px;
     margin-left: -5px;
     border: 1px solid  #F2F2F2;  
-
-}
-input:focus
-{
-    outline: 0;
 }
 .bouton_rechercher
 {
@@ -176,6 +207,17 @@ input:focus
     color: white;
     background-color: #0065FC;
 }
+
+/*debut responsive queries jusqu'a ligne html*/
+@media all and (max-width: 1024px)
+{
+    form
+    {
+        margin-bottom: 20px;
+    }
+}
+/*fin responsive queries jusqu'a ligne html*/
+
 
 /*bloc filtre*/
 #filtre_bloc
@@ -352,6 +394,43 @@ input:focus
     margin-left: 10px;    
 }
 
+/*debut responsive queries jusqu'a ligne html*/
+@media all and (max-width: 1024px)
+{
+    #filtre_bloc
+    {
+        width: auto;
+        height: 200px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+                                    /*font-size: 1.2em a checker*/
+    }
+    .filtre_titre
+    {
+        width: 500px;
+    }
+    .filtre_eco, .filtre_rom
+    {
+        width: auto;
+        margin-left: 15px;
+    }
+    .filtre_rom
+    {
+        margin-right: 100px;  
+    }
+    .filtre_anim
+    {
+        margin-left: 15px;
+    }
+    .info
+    {
+        width: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+/*fin responsive queries jusqu'a ligne html*/
+
 /*section bloc hebergement*/
 section
 {
@@ -363,6 +442,10 @@ section a
 {
     text-decoration: none;
     color: black;
+}
+section .fa-star, .fa-star-o
+{
+    color: #0065FC;
 }
 #bloc_hebergement 
 {      
@@ -427,6 +510,55 @@ section a
     margin-left: 20px;
 }
 
+/*debut responsive queries jusqu'a ligne html*/
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;  
+    }
+    #bloc_hebergement
+    {
+        background-color: white;  
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .bloc_heb1
+    {
+        height: 800px;
+        flex-direction: column; 
+        align-items: baseline;
+        
+    }
+    .bloc_heb2
+    {
+        height: 800px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .choix_heb
+    {
+        width: 430px;
+    }
+    #bloc_hebergement img
+    {
+        width: 420px;
+        height: 150px;
+    }
+    .choix_heb p
+    {
+        padding-left: 20px;
+    }
+}
+/*fin responsive queries jusqu'a ligne html*/
+
 /*section bloc populaire*/
 #bloc_populaire
 {
@@ -439,7 +571,7 @@ section a
 #bloc_pop
 {
     width: auto;
-    height: 550px;
+    height: 530px;
     padding: 10px 0px 5px 0px;
     display: flex;
     flex-direction: column;
@@ -460,11 +592,14 @@ section a
 }
 #bloc_populaire p
 {
-    width: auto;
-    margin: 0px 30px 0px 10px; 
+    width: 200px;
+    margin: 0px 30px 0px 15px; 
+    padding-top: 10px;
+
 }
 .choix_pop
 {   
+    width: auto;
     display: flex;
     height: 150px;
     margin: 0px 20px 0px 20px;
@@ -476,15 +611,58 @@ section a
 }
 .choix_pop .fa-star 
 {
-    margin-top: 50px;  
+    margin-top: 60px;  
 }
+
+/*debut responsive queries jusqu'a ligne html*/
+@media all and (max-width: 1024px)
+{
+    #bloc_pop
+    {
+        width: auto;
+    }
+    #bloc_populaire img
+    {
+        width: 180px;
+    }
+    #bloc_populaire
+    {  
+        width: auto;
+        border-radius: 0;
+        order: 1;
+    }
+    #bloc_populaire h2
+    {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 430px;
+    }
+    #bloc_populaire p
+    {
+        width: 170px;
+    }
+    .choix_pop
+    {
+        width: 420px; 
+    }
+    #bloc_hebergement
+    {
+        order: 2;
+    }
+    #bloc_activite
+    {
+        order: 3;
+    }
+}
+/*fin responsive queries jusqu'a ligne html*/
+
 
 /*dernier bloc activités*/
 #bloc_activite
 {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: auto;
     height: 450px;
     position: relative;
     margin-bottom: 20px;
@@ -498,6 +676,7 @@ section a
 .vieux_port
 {
     height: auto;
+    margin-right: 30px;
     border-radius: 20px;
     border: #F2F2F2 1px solid;
     background-color: white;
@@ -506,6 +685,7 @@ section a
 .activite1
 {
     height: auto;
+    margin-right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;     
@@ -514,6 +694,7 @@ section a
 {        
     height: auto;
     border: #F2F2F2 1px solid; 
+    margin-right: 30px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 5px 10px #F2F2F2;
@@ -534,7 +715,7 @@ section a
 #bloc_activite p
 {
     font-family: 'ralewaybold', Arial, Helvetica, sans-serif;
-    padding-left: 10px;   
+    padding-left: 20px;   
 }
 .vieux_port img
 { 
@@ -589,6 +770,45 @@ section a
     height: 165px;
 }
 
+/*debut responsive queries jusqu'a ligne html*/
+@media all and (max-width: 1024px)
+{
+#bloc_activite
+    {
+        flex-direction: column;
+        width: auto; 
+        height: auto;
+    }
+    #bloc_activite h2
+    {
+        margin-left: 20px;
+    }
+    #bloc_activite p
+    {
+        padding-left: 20px;
+    }
+    #bloc_activite img
+    {
+        width: 420px;
+        height: 200px;
+    }
+    .activite1, .activite2
+    {
+        width: 420px;
+        margin-left: 20px;
+        height: 550px;
+        margin-bottom: 30px;
+    }
+    .vieux_port, .calanques
+    {
+        margin-left: 20px;
+        width: 420px;
+        margin-bottom: 30px; 
+    }
+}
+/*debut responsive queries jusqu'a ligne html*/
+
+
 /*section pied de page*/
 footer
 {
@@ -614,4 +834,16 @@ footer
     margin: 30px 0px 25px 0px;   
 }
 
-
+/*debut responsive queries jusqu'a ligne html*/
+@media all and (max-width: 1024px)
+{
+    footer
+    {
+        height: auto;
+        flex-direction: column;
+    }
+    #piedepage
+    {
+        flex-direction: column;
+    }
+}
