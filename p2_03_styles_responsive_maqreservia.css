@@ -1,0 +1,260 @@
+
+
+@media all and (max-width: 1024px)      
+{
+    /*en_tete_et_logo*/
+    #main_wrapper
+    {
+        width: auto;
+        border: 0;
+    }
+    h2
+    {
+        font-size: 1.3em;
+    }
+    header
+    {
+        width: auto;
+        height: 150px;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+        border-bottom: solid 3px #F2F2F2; 
+        position: relative;
+    }
+    header img
+    {
+        height: 50px;
+    }
+    .logodusite
+    {
+        position: absolute;
+        top: 20px; 
+    }
+
+    /*menu_navigation*/
+    nav ul
+    {
+        width: 500px;  
+        padding-left: 0; 
+        margin-bottom: 0;
+        height: 40px;
+    }
+    nav a
+    {
+        width: auto;
+        margin-left: 0;  
+    }
+    nav a:hover
+    {
+        padding-top: 0;
+        border-top: 0;
+    }
+    #hebergement
+    {
+        width: 50%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2em;
+    }
+    #hebergement:hover
+    {
+        border-bottom: solid 3px #0065FC;
+    }
+    #activite
+    {
+        width: 50%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2em;
+    }
+    #activite:hover
+    {
+        border-bottom: solid 3px #0065FC;
+    }
+    .menu_sinscrire
+    {
+        position: absolute;
+        top: 40px;
+        left: 350px;
+        font-size: 1.2em;
+    }
+
+    /*titre_bloc_recherche*/
+    .def_reservia 
+    {
+        width: auto;
+        font-size: 1.2em;
+        margin-right: 40px;
+        margin-bottom: 40px;
+    }
+    form
+    {
+        margin-bottom: 20px;
+    }
+
+    /*filtre_et_info*/
+    #filtre_bloc
+    {
+        width: auto;
+        height: 200px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    .filtre_titre
+    {
+        width: 500px;
+    }
+    .filtre_eco, .filtre_rom
+    {
+        width: auto;
+        margin-left: 15px;
+    }
+    .filtre_rom
+    {
+        margin-right: 100px;  
+    }
+    .filtre_anim
+    {
+        margin-left: 15px;
+    }
+    .info
+    {
+        width: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    /*section*/
+    section
+    {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    /*bloc_populaire*/
+    #bloc_pop
+    {
+        width: auto;
+    }
+    #bloc_populaire img
+    {
+        width: 180px;
+    }
+    #bloc_populaire
+    {  
+        width: auto;
+        border-radius: 0;
+        order: 1;
+    }
+    #bloc_populaire h2
+    {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 430px;
+    }
+    #bloc_populaire p
+    {
+        width: 170px;
+    }
+    .choix_pop
+    {
+        width: 420px; 
+    }
+
+
+    /*bloc_hebergement*/
+    #bloc_hebergement
+    {
+        order: 2;
+    }
+    #bloc_hebergement
+    {
+        background-color: white;  
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .bloc_heb1
+    {
+        height: 800px;
+        flex-direction: column; 
+        align-items: baseline;
+        
+    }
+    .bloc_heb2
+    {
+        height: 800px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .choix_heb
+    {
+        width: 430px;
+    }
+    #bloc_hebergement img
+    {
+        width: 420px;
+        height: 150px;
+    }
+    .choix_heb p
+    {
+        padding-left: 20px;
+    }
+
+    /*bloc_activite*/
+    #bloc_activite
+    {
+        order: 3;
+    }
+    #bloc_activite
+    {
+        flex-direction: column;
+        width: auto; 
+        height: auto;
+    }
+    #bloc_activite h2
+    {
+        margin-left: 20px;
+    }
+    #bloc_activite p
+    {
+        padding-left: 20px;
+    }
+    #bloc_activite img
+    {
+        width: 420px;
+        height: 200px;
+    }
+    .activite1, .activite2
+    {
+        width: 420px;
+        margin-left: 20px;
+        height: 550px;
+        margin-bottom: 30px;
+    }
+    .vieux_port, .calanques
+    {
+        margin-left: 20px;
+        width: 420px;
+        margin-bottom: 30px; 
+    }
+
+    /*bloc_pied_de_page*/
+    footer
+    {
+        height: auto;
+        flex-direction: column;
+    }
+    #piedepage
+    {
+        flex-direction: column;
+    }
+}
