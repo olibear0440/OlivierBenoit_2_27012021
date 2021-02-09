@@ -36,8 +36,6 @@ header
     height: 100px;   
 }
 
-
-
 /*bloc menu*/
 nav ul 
 {
@@ -66,103 +64,18 @@ nav a:hover
     color: #0065FC;
 }
 
-
-  /*debut responsive queries jusqu'a ligne 35 html*/
-@media all and (max-width: 1024px)      
-{
-    #main_wrapper
-    {
-        width: auto;
-    }
-    h2
-    {
-        font-size: 1.3em;
-    }
-    header
-    {
-        width: auto;
-        height: 150px;
-        align-items: flex-start;
-        flex-direction: column-reverse;
-        margin-bottom: 20px;
-        border-bottom: solid 3px #F2F2F2; 
-        position: relative;
-    }
-    header img
-    {
-        height: 50px;
-    }
-    nav ul
-    {
-        width: 500px;  
-        padding-left: 0; 
-        margin-bottom: 0;
-        height: 40px;
-    }
-    nav a
-    {
-        width: auto;
-        margin-left: 0;  
-    }
-    nav a:hover
-    {
-        padding-top: 0;
-        border-top: 0;
-    }
-    #hebergement
-    {
-        width: 50%;
-        height: 40px;
-        display: flex;
-        justify-content: space-around;
-        font-size: 1.2em;
-    }
-    #hebergement:hover
-    {
-        border-bottom: solid 3px #0065FC;
-    }
-    #activite
-    {
-        width: 50%;
-        height: 40px;
-        display: flex;
-        justify-content: space-around;
-        font-size: 1.2em;
-    }
-    #activite:hover
-    {
-        border-bottom: solid 3px #0065FC;
-    }
-    .menu_sinscrire
-    {
-        position: absolute;
-        top: 40px;
-        left: 350px;
-        font-size: 1.2em;
-    }
-    .logodusite
-    {
-        position: absolute;
-        top: 20px; 
-    }
-    .def_reservia 
-    {
-        width: auto;
-        font-size: 1.2em;
-        margin-right: 40px;
-        margin-bottom: 40px;
-    }
-}
-/*fin responsive queries jusqu'a ligne 35 html*/
-
-
 /*bloc logo principal*/
 .logodusite
 {  
     display: flex;
     align-items: flex-end;
     width: 200px;
-    margin-left: 20px;   
+    margin-left: 20px;
+    
+}
+header img
+{
+    width: 120px;
 }
 
 /*titre et definition du site*/
@@ -170,6 +83,7 @@ nav a:hover
 {
     width: 600px;
     margin-left: 20px;   
+    margin-top: 30px;
 }
 
 /*formulaire de recherche*/
@@ -177,7 +91,7 @@ form
 {
     width: 400px;
     margin-left: 20px;
-    margin-bottom: 40px;   
+    margin-bottom: 30px;   
 }
 .fa-map-marker
 {
@@ -207,17 +121,6 @@ input
     color: white;
     background-color: #0065FC;
 }
-
-/*debut responsive queries jusqu'a ligne html*/
-@media all and (max-width: 1024px)
-{
-    form
-    {
-        margin-bottom: 20px;
-    }
-}
-/*fin responsive queries jusqu'a ligne html*/
-
 
 /*bloc filtre*/
 #filtre_bloc
@@ -394,44 +297,7 @@ input
     margin-left: 10px;    
 }
 
-/*debut responsive queries jusqu'a ligne html*/
-@media all and (max-width: 1024px)
-{
-    #filtre_bloc
-    {
-        width: auto;
-        height: 200px;
-        margin-bottom: 10px;
-        flex-wrap: wrap;
-                                    /*font-size: 1.2em a checker*/
-    }
-    .filtre_titre
-    {
-        width: 500px;
-    }
-    .filtre_eco, .filtre_rom
-    {
-        width: auto;
-        margin-left: 15px;
-    }
-    .filtre_rom
-    {
-        margin-right: 100px;  
-    }
-    .filtre_anim
-    {
-        margin-left: 15px;
-    }
-    .info
-    {
-        width: auto;
-        margin-right: 20px;
-        margin-bottom: 10px;
-    }
-}
-/*fin responsive queries jusqu'a ligne html*/
-
-/*section bloc hebergement*/
+/*section_bloc hebergement*/
 section
 {
     display: flex;
@@ -510,56 +376,7 @@ section .fa-star, .fa-star-o
     margin-left: 20px;
 }
 
-/*debut responsive queries jusqu'a ligne html*/
-@media all and (max-width: 1024px)
-{
-    section
-    {
-        width: auto;
-        margin-left: 0;
-        margin-right: 0;
-        display: flex;
-        flex-direction: column;  
-    }
-    #bloc_hebergement
-    {
-        background-color: white;  
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-    .bloc_heb1
-    {
-        height: 800px;
-        flex-direction: column; 
-        align-items: baseline;
-        
-    }
-    .bloc_heb2
-    {
-        height: 800px;
-        flex-direction: column;
-        align-items: baseline;
-    }
-    .choix_heb
-    {
-        width: 430px;
-    }
-    #bloc_hebergement img
-    {
-        width: 420px;
-        height: 150px;
-    }
-    .choix_heb p
-    {
-        padding-left: 20px;
-    }
-}
-/*fin responsive queries jusqu'a ligne html*/
-
-/*section bloc populaire*/
+/*bloc populaire*/
 #bloc_populaire
 {
     background-color:#F2F2F2;
@@ -595,7 +412,6 @@ section .fa-star, .fa-star-o
     width: 200px;
     margin: 0px 30px 0px 15px; 
     padding-top: 10px;
-
 }
 .choix_pop
 {   
@@ -613,51 +429,8 @@ section .fa-star, .fa-star-o
 {
     margin-top: 60px;  
 }
-
-/*debut responsive queries jusqu'a ligne html*/
-@media all and (max-width: 1024px)
-{
-    #bloc_pop
-    {
-        width: auto;
-    }
-    #bloc_populaire img
-    {
-        width: 180px;
-    }
-    #bloc_populaire
-    {  
-        width: auto;
-        border-radius: 0;
-        order: 1;
-    }
-    #bloc_populaire h2
-    {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        width: 430px;
-    }
-    #bloc_populaire p
-    {
-        width: 170px;
-    }
-    .choix_pop
-    {
-        width: 420px; 
-    }
-    #bloc_hebergement
-    {
-        order: 2;
-    }
-    #bloc_activite
-    {
-        order: 3;
-    }
-}
-/*fin responsive queries jusqu'a ligne html*/
-
-
-/*dernier bloc activités*/
+   
+/*bloc activité*/
 #bloc_activite
 {
     display: flex;
@@ -770,45 +543,6 @@ section .fa-star, .fa-star-o
     height: 165px;
 }
 
-/*debut responsive queries jusqu'a ligne html*/
-@media all and (max-width: 1024px)
-{
-#bloc_activite
-    {
-        flex-direction: column;
-        width: auto; 
-        height: auto;
-    }
-    #bloc_activite h2
-    {
-        margin-left: 20px;
-    }
-    #bloc_activite p
-    {
-        padding-left: 20px;
-    }
-    #bloc_activite img
-    {
-        width: 420px;
-        height: 200px;
-    }
-    .activite1, .activite2
-    {
-        width: 420px;
-        margin-left: 20px;
-        height: 550px;
-        margin-bottom: 30px;
-    }
-    .vieux_port, .calanques
-    {
-        margin-left: 20px;
-        width: 420px;
-        margin-bottom: 30px; 
-    }
-}
-/*debut responsive queries jusqu'a ligne html*/
-
-
 /*section pied de page*/
 footer
 {
@@ -834,16 +568,4 @@ footer
     margin: 30px 0px 25px 0px;   
 }
 
-/*debut responsive queries jusqu'a ligne html*/
-@media all and (max-width: 1024px)
-{
-    footer
-    {
-        height: auto;
-        flex-direction: column;
-    }
-    #piedepage
-    {
-        flex-direction: column;
-    }
-}
+
