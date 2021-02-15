@@ -1,8 +1,7 @@
 
 
-@media all and (max-width: 1024px)      
+@media screen and (max-width: 768px) and (min-width: 375px)     
 {
-    /*en_tete_et_logo*/
     #main_wrapper
     {
         width: auto;
@@ -14,247 +13,119 @@
     }
     header
     {
-        width: auto;
-        height: 150px;
-        align-items: flex-start;
-        flex-direction: column-reverse;
-        margin-bottom: 20px;
-        border-bottom: solid 3px #F2F2F2; 
-        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
     }
     header img
     {
-        height: 50px;
+        width: 150px;
     }
-    .logodusite
-    {
-        position: absolute;
-        top: 20px; 
-    }
-
-    /*menu_navigation*/
-    nav ul
-    {
-        width: 500px;  
-        padding-left: 0; 
-        margin-bottom: 0;
-        height: 40px;
-    }
-    nav a
-    {
-        width: auto;
-        margin-left: 0;  
-    }
-    nav a:hover
-    {
-        padding-top: 0;
-        border-top: 0;
-    }
-    #hebergement
-    {
-        width: 50%;
-        height: 40px;
-        display: flex;
-        justify-content: space-around;
-        font-size: 1.2em;
-    }
-    #hebergement:hover
-    {
-        border-bottom: solid 3px #0065FC;
-    }
-    #activite
-    {
-        width: 50%;
-        height: 40px;
-        display: flex;
-        justify-content: space-around;
-        font-size: 1.2em;
-    }
-    #activite:hover
-    {
-        border-bottom: solid 3px #0065FC;
-    }
-    .menu_sinscrire
-    {
-        position: absolute;
-        top: 40px;
-        left: 350px;
-        font-size: 1.2em;
-    }
-
-    /*titre_bloc_recherche*/
-    .def_reservia 
-    {
-        width: auto;
-        font-size: 1.2em;
-        margin-right: 40px;
-        margin-bottom: 40px;
-    }
-    form
-    {
-        margin-bottom: 20px;
-    }
-
-    /*filtre_et_info*/
     #filtre_bloc
     {
-        width: auto;
-        height: 200px;
-        margin-bottom: 10px;
         flex-wrap: wrap;
+        margin-bottom: 20px;
     }
     .filtre_titre
     {
-        width: 500px;
+        width: 100%;
+        font-size: 1.3em;
     }
-    .filtre_eco, .filtre_rom
+    .filtre_eco
     {
-        width: auto;
-        margin-left: 15px;
+        margin-right: 80px;
+        margin-left: 80px;
+        margin-bottom: 40px;
+    }
+    .filtre_fam
+    {
+        width: 210px;
+        margin-right: 80px;
     }
     .filtre_rom
     {
-        margin-right: 100px;  
+        margin-left: 80px;
     }
     .filtre_anim
     {
-        margin-left: 15px;
+        margin-left: 45px;
     }
-    .info
-    {
-        width: auto;
-        margin-right: 20px;
-        margin-bottom: 10px;
-    }
-
-    /*section*/
     section
     {
-        width: auto;
-        margin-left: 0;
-        margin-right: 0;
-        display: flex;
-        flex-direction: column;  
+        flex-wrap: wrap;
     }
-
-    /*bloc_populaire*/
-    #bloc_pop
+    #bloc_hebergement
     {
-        width: auto;
+        width: 100%;
+        margin-bottom: 20px;
     }
-    #bloc_populaire img
+    #bloc_hebergement h2
     {
-        width: 180px;
+        margin-left: 20px;
+    }
+    .vignette_hebergement
+    {
+        margin-right: 20px;
+    }
+    .choix_hebergement
+    {
+        width: 40%;
+        margin-left: 20px;  
+    }
+    .afficher_plus
+    {
+        margin-left: 20px;
     }
     #bloc_populaire
-    {  
-        width: auto;
-        border-radius: 0;
-        order: 1;
-    }
-    #bloc_populaire h2
     {
-        margin-top: 40px;
-        margin-bottom: 10px;
-        width: 430px;
+        width: 100%;
+        margin-left: 20px;
     }
-    #bloc_populaire p
+    .vignette_pop
     {
-        width: 170px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-    .choix_pop
+    .fa-chart-line
     {
-        width: 420px; 
-    }
-
-
-    /*bloc_hebergement*/
-    #bloc_hebergement
-    {
-        order: 2;
-    }
-    #bloc_hebergement
-    {
-        background-color: white;  
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-    .bloc_heb1
-    {
-        height: 800px;
-        flex-direction: column; 
-        align-items: baseline;
-        
-    }
-    .bloc_heb2
-    {
-        height: 800px;
-        flex-direction: column;
-        align-items: baseline;
-    }
-    .choix_heb
-    {
-        width: 430px;
-    }
-    #bloc_hebergement img
-    {
-        width: 420px;
-        height: 150px;
-    }
-    .choix_heb p
-    {
-        padding-left: 20px;
-    }
-
-    /*bloc_activite*/
-    #bloc_activite
-    {
-        order: 3;
+        margin-left: 350px;
     }
     #bloc_activite
     {
-        flex-direction: column;
-        width: auto; 
-        height: auto;
+        padding-top: 20px;
     }
     #bloc_activite h2
     {
-        margin-left: 20px;
+        margin-left: 40px;
     }
-    #bloc_activite p
+    .vieux_port
     {
-        padding-left: 20px;
+        width: 45%;
+        margin-bottom: 20px;
     }
-    #bloc_activite img
+    .activite1
     {
-        width: 420px;
-        height: 200px;
+        width: 45%;
+        margin-right: 20px;
     }
-    .activite1, .activite2
+    .frioul
     {
-        width: 420px;
-        margin-left: 20px;
-        height: 550px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
-    .vieux_port, .calanques
+    .calanques
     {
-        margin-left: 20px;
-        width: 420px;
-        margin-bottom: 30px; 
+        width: 45%;
+        margin-top: 10px;
     }
-
-    /*bloc_pied_de_page*/
-    footer
+    .activite2
     {
-        height: auto;
-        flex-direction: column;
+        width: 45%;
     }
-    #piedepage
+    .notre_dame
     {
-        flex-direction: column;
+        margin-top: 10px;
+    }
+    .bloc_foot
+    {
+        margin-right: 45px;
     }
 }
