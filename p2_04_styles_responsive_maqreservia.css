@@ -1,0 +1,326 @@
+
+
+@media screen and (max-width: 375px)
+{
+    #main_wrapper
+    {
+        width: auto;
+        /*height: 4550px;*/
+        
+    }
+    header
+    {
+        height: 150px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        border-bottom: solid 2px #F2F2F2;
+
+    }
+    nav ul
+    {
+        height: 80px;
+        margin-top: 0;
+        margin-right: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+        flex-wrap: wrap-reverse;
+        position: relative;
+    }
+    nav li
+    {
+        height: 50px;
+        width: 168px;
+    }
+    nav li:hover
+    {
+        border-bottom: 0;
+    }
+    #hebergement
+    {
+        text-align: center;
+    }
+    #hebergement:hover
+    {
+        border-bottom: solid 4px #0065FC;
+    }
+    #activite
+    {
+        text-align: center;
+    }
+    #activite:hover
+    {
+        border-bottom: solid 4px #0065FC;
+    }
+    nav a
+    {
+        margin-left: 0;
+    }
+    nav a:hover
+    {
+        padding-top: 0;
+        border-top: 0; 
+    }
+    .menu_sinscrire
+    {
+        position: absolute;
+        right: 20px;
+    }
+    .logodusite
+    {
+        margin-left: 0;
+        position: relative;
+    }
+    header img
+    {
+        position: absolute;
+        width: 100px;
+        top: 10px;
+    }
+    .def_reservia
+    {
+        width: auto;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    input
+    {
+        margin-top: 20px;
+    }
+    .bouton_rechercher
+    {
+        padding-right: 5px;
+        padding-left: 5px;
+        width: 50px;
+        height: 45px;
+        border-radius: 10px;
+        margin-left: -15px;  
+        position: relative; 
+        color:#0065FC;
+    }
+    p .fa-search
+    {
+        position: absolute;
+        left: 265px;
+        top: 35px;
+        color: white; 
+        display: inline-block;
+    }
+    
+    #filtre_bloc
+    {
+        margin-top: -20px;
+        font-size: 0.9em;
+    }
+
+    .filtre_eco
+    {
+        margin-left: 15px;
+        width: 45%;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    .filtre_fam
+    {
+        width: 35%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .filtre_rom
+    {
+        margin-left: 15px;
+        width: 43%;
+        margin-bottom: 10px;
+    }
+    .filtre_anim
+    {
+        margin-left: 15px;
+        width: 65%;
+    }
+    .info
+    {
+        width: auto;
+        margin-right: 20px;
+    }
+    section
+    {
+        width: auto;
+        flex-direction: column;
+    }
+    .fa-star
+    {
+        font-size: 0.9em;
+    }
+    #bloc_populaire
+    {
+        order: 1;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0; 
+    }
+    .vignette_pop
+    {
+        width: auto; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fa-chart-line
+    {
+        margin-left: 80px;
+    }
+    .choix_pop
+    {
+        width: 100%;
+        height: 100px;
+        margin-right: 10px;
+        margin-left: 10px;
+
+    }
+    #bloc_populaire p
+    {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 20px;
+        font-size: 0.9em; 
+    }
+    .choix_pop .fa-star 
+    {
+        margin-top: 20px;
+    }
+    #bloc_hebergement
+    {
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        background-color: white;
+        border-radius: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .vignette_hebergement
+    {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .choix_hebergement
+    {
+        width: 100%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    #bloc_hebergement img 
+    {
+        width: 97%;
+    }
+    .choix_hebergement p
+    { 
+        font-size: 0.9em;
+    }
+    #bloc_activite
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0;
+    }
+    #bloc_activite h2
+    {
+        margin-left: 40px;
+        
+    }
+    #bloc_activite p
+    {
+        font-size: 0.9em;
+    }
+    .vieux_port
+    {
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .vieux_port img
+    {
+        height: 180px;
+    }
+    .activite1
+    {
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .activite1 img
+    {
+        height: 180px;
+    }
+    .pomegues
+    {
+        margin-bottom: 20px;
+    }
+    .frioul
+    {
+        margin-bottom: 0;
+    }
+    .calanques
+    {
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 0;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .calanques img
+    {
+        height: 180px;
+    }
+    .activite2
+    {
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .activite2 img
+    {
+        height: 180px;
+    }
+    .notre_dame
+    {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    #piedepage
+    {
+        flex-direction: column;
+    }
+    .bloc_foot
+    {
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+
+
+    
+
+    
+
+    
+    
+    
+
+
+}
