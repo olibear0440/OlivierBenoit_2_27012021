@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 1200px) and (min-width: 600px)     
+@media screen and (max-width: 1200px) and (min-width: 500px)   
 {
     #main_wrapper
     {
@@ -15,10 +15,6 @@
     {
         flex-direction: column-reverse;
         flex-wrap: wrap; 
-    }
-    nav
-    {
-        width: auto;
     }
     nav ul 
     {
@@ -53,6 +49,10 @@
     header img
     {
         width: 150px;
+    }
+    input 
+    {
+        width: 200px;
     }
     section
     {
