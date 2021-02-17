@@ -13,7 +13,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 #main_wrapper
 {
     max-width: 1440px;
@@ -57,7 +56,6 @@ nav ul
     margin-right: 40px;
     list-style-type: none; 
 }
-
 nav a
 {
     text-decoration: none;
@@ -162,7 +160,6 @@ p .fa-search
     margin-top: 5px;
     margin-bottom: 10px;
     padding-left: 10px;    
-
 }
 .filtre_titre
 {
@@ -358,8 +355,7 @@ section a
     margin-left: 20px; 
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 20px; 
-    
+    border-radius: 20px;   
 }
 #bloc_hebergement h2 
 {
@@ -436,23 +432,19 @@ section a
     border-top-left-radius: 15px; 
     border-bottom-left-radius: 15px;  
 }
-
 .titre_pop_etlogo
-{
-    
+{  
     margin: 0px 20px 20px 20px; 
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
-    
+    align-items: baseline;  
 }
 h2
 {
     width: auto;
 }
-
 #bloc_populaire p
 {
     max-width: 160px;
@@ -472,8 +464,7 @@ h2
 }
 .choix_pop .fa-star 
 {
-    margin-top: 50px; 
-    
+    margin-top: 50px;    
 }
    
 /*bloc activité*/
@@ -501,8 +492,7 @@ h2
     border: #F2F2F2 1px solid;
     background-color: white;
     box-shadow: 0px 5px 10px #F2F2F2;
-    width: 23%;
-    
+    width: 23%; 
 }
 .activite1
 {
@@ -597,7 +587,7 @@ h2
 /*section pied de page*/
 footer
 {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     background-color: #F2F2F2;  
