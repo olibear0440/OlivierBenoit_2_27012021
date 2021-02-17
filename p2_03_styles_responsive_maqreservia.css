@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 768px) and (min-width: 375px)     
+@media screen and (max-width: 1200px) and (min-width: 600px)     
 {
     #main_wrapper
     {
@@ -13,41 +13,46 @@
     }
     header
     {
-        flex-direction: column;
-        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+        flex-wrap: wrap; 
+    }
+    nav
+    {
+        width: auto;
+    }
+    nav ul 
+    {
+        width: 100%;
+        margin-right: 0;
+        padding-left: 0;
+        margin-top: 40px;
+        border-bottom: #F2F2F2 solid 1px;
+    }
+    nav li
+    {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding-bottom: 20px;    
+    }
+    nav a
+    {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    nav a:hover
+    {
+        padding-top: 0;
+        border-top: 0;  
+    }
+    nav li:hover
+    {
+        border-bottom: solid 2px #0065FC;    
     }
     header img
     {
         width: 150px;
-    }
-    #filtre_bloc
-    {
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-    .filtre_titre
-    {
-        width: 100%;
-        font-size: 1.3em;
-    }
-    .filtre_eco
-    {
-        margin-right: 80px;
-        margin-left: 80px;
-        margin-bottom: 40px;
-    }
-    .filtre_fam
-    {
-        width: 210px;
-        margin-right: 80px;
-    }
-    .filtre_rom
-    {
-        margin-left: 80px;
-    }
-    .filtre_anim
-    {
-        margin-left: 45px;
     }
     section
     {
@@ -55,16 +60,28 @@
     }
     #bloc_hebergement
     {
-        width: 100%;
+        order: 2;
+        width: auto;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
     #bloc_hebergement h2
     {
         margin-left: 20px;
     }
+    #bloc_hebergement img
+    {
+        height: auto;
+        width: 96%;
+    }
+    #bloc_hebergement p 
+    {
+        font-size: 1.1em;
+    }
     .vignette_hebergement
     {
         margin-right: 20px;
+        margin-left: 20px;
     }
     .choix_hebergement
     {
@@ -77,8 +94,17 @@
     }
     #bloc_populaire
     {
+        order: 1;
         width: 100%;
         margin-left: 20px;
+    }
+    #bloc_populaire img 
+    {
+        width: 60%;
+    }
+    #bloc_populaire p 
+    {
+        font-size: 1.1em;
     }
     .vignette_pop
     {
@@ -96,6 +122,10 @@
     #bloc_activite h2
     {
         margin-left: 40px;
+    }
+    #bloc_activite p 
+    {
+        font-size: 1.1em;
     }
     .vieux_port
     {
@@ -127,5 +157,9 @@
     .bloc_foot
     {
         margin-right: 45px;
+    }
+    .titre_foot
+    {
+        font-size: 1.1em;
     }
 }

@@ -1,11 +1,10 @@
 
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 480px)
 {
     #main_wrapper
     {
         width: auto;
-        /*height: 4550px;*/
         
     }
     header

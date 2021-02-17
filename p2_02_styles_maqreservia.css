@@ -16,8 +16,8 @@
 
 #main_wrapper
 {
-    width: 1440px;
-    height: 1884px;
+    max-width: 1440px;
+    max-height: 1884px;
     margin:auto;
     background-color: white;
     border: solid 2px #F2F2F2;
@@ -38,6 +38,17 @@ header
 }
 
 /*bloc menu*/
+nav
+{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+nav li
+{
+    width: auto;
+}
 nav ul 
 {
     display: flex;
@@ -46,17 +57,18 @@ nav ul
     margin-right: 40px;
     list-style-type: none; 
 }
+
 nav a
 {
     text-decoration: none;
     color: black;
-    margin-left: 60px;    
+    margin-left: 60px;  
 }
 nav a:hover
 {
     padding-top: 47px;
     color: #0065FC;
-    border-top: solid 4px #0065FC;    
+    border-top: solid 3px #0065FC;    
 }
 .menu_sinscrire
 {
@@ -143,6 +155,7 @@ p .fa-search
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    flex-wrap: wrap;
     font-family: 'ralewaybold', Arial, Helvetica, sans-serif;
     width: auto;
     margin-left: 20px;
@@ -346,16 +359,16 @@ section a
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 20px; 
-    display: flex;
-    flex-wrap: wrap;  
+    
 }
 #bloc_hebergement h2 
 {
     width: 100%;
+    margin-bottom: 40px;
 }
 #bloc_hebergement img 
 {  
-    height: 120px;
+    height: auto;
     width: 96%;
     margin: 5px 5px 0px 5px;
     border-top-right-radius: 15px;
@@ -366,6 +379,7 @@ section a
     display: flex;
     flex-wrap: wrap;
     width: auto;
+    height: auto;
     justify-content: space-between;
     align-items: center;
     margin-left: 20px;  
@@ -374,7 +388,7 @@ section a
 {
     border-radius: 20px;
     background-color: white;
-    width: 31%;
+    width: 30%;
     box-shadow: 0px 5px 10px #D9D9D9;  
     margin-right: 20px;
     margin-bottom: 20px;
@@ -425,17 +439,23 @@ section a
 
 .titre_pop_etlogo
 {
-    display: flex; 
-    margin: 0px 20px 0px 20px; 
-    width: 100%;
+    
+    margin: 0px 20px 20px 20px; 
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    
 }
-.fa-chart-line
+h2
 {
-    margin-left: 200px;
+    width: auto;
 }
+
 #bloc_populaire p
 {
-    width: 160px;
+    max-width: 160px;
     margin-left: 15px;
     font-size: 1em;
 }
@@ -443,8 +463,8 @@ section a
 {   
     width: auto;
     display: flex;
-    height: 150px;
-    margin: 0px 20px 20px 20px;
+    height: auto;
+    margin: 0px 20px 30px 20px;
     border-radius: 20px;
     border: white 5px solid; 
     background-color: white; 
@@ -452,7 +472,8 @@ section a
 }
 .choix_pop .fa-star 
 {
-    margin-top: 50px;  
+    margin-top: 50px; 
+    
 }
    
 /*bloc activité*/
