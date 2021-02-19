@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 1200px) and (min-width: 500px)   
+@media screen and (max-width: 1200px) and (min-width: 480px)   
 {
     #main_wrapper
     {
@@ -29,7 +29,8 @@
         width: 100%;
         height: auto;
         text-align: center;
-        padding-bottom: 20px;    
+        padding-bottom: 20px;   
+        border-bottom: 2px solid transparent; 
     }
     nav a
     {
