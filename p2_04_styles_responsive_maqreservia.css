@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 480px)
 {
     #main_wrapper
     {
@@ -27,6 +27,7 @@
     { 
         width: 50%;
         height: 30px;
+        border-bottom: solid 2px transparent;
     }
     nav li:nth-child(1):hover
     {
@@ -36,6 +37,7 @@
     {
         width: 50%;
         height: 30px;
+        border-bottom: solid 2px transparent;
     }
     nav li:nth-child(2):hover
     {
