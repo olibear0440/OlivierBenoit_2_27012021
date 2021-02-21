@@ -13,13 +13,17 @@
     font-weight: normal;
     font-style: normal;
 }
+body
+{
+background-color: white;
+margin: 0;
+}
 #main_wrapper
 {
     max-width: 1440px;
     max-height: 1884px;
     margin:auto;
     background-color: white;
-    border: solid 2px #F2F2F2;
     font-family: 'ralewayregular', Arial, Helvetica, sans-serif;        
 }
 h2
@@ -104,47 +108,65 @@ header img
 /*formulaire de recherche*/
 form
 {
-    width: auto;
     margin-left: 20px; 
-    position: relative;
-    top: -10px;
+    margin-right: 20px;
+    height: auto;
+    width: auto;
+}
+table
+{
+    width: auto;
+    height: auto;
+    border-collapse: collapse;
+}
+td:nth-child(1)
+{
+    height: 35px;
+    width: 35px;
+    
+}
+td:nth-child(2)
+{ 
+    height: 35px;
+    width: 200px;
+}
+td:nth-child(3)
+{
+    height: 35px;   
 }
 .fa-map-marker-alt
 {
-    width: 20px;
-    height: 30px;
-    padding: 10px 10px 0px 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1.5px solid #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: #F2F2F2; 
-    border: 1.7px solid #F2F2F2;  
+    background-color: #F2F2F2;
 }
-input
+#saisieclient
 { 
-    height: 40px;
-    width: 200px;
-    margin-left: -5px;
     border: 1px solid  #F2F2F2;  
+    width: 100%;
+    height: 35px;
+    position: relative;
+    right: 2px;
 }
 .bouton_rechercher
 {
-    border: 1px solid #0065FC;
     padding-right: 15px;
     padding-left: 15px;
-    margin-left: -5px;
-    height: 43px;
+    height: 100%;
     width: 100px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: white;
     background-color: #0065FC;
-    position: relative;
+    border: 1px solid #0065FC;
 }
-p .fa-search
+td .fa-search
 {
-    position: absolute;
-    left: 300px;
-    top: 15px;
     display: none;
 }
 
@@ -366,11 +388,11 @@ section a
 #bloc_hebergement h2 
 {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 #bloc_hebergement img 
 {  
-    height: auto;
+    height: 135px;
     width: 96%;
     margin: 5px 5px 0px 5px;
     border-top-right-radius: 15px;
@@ -393,7 +415,7 @@ section a
     width: 30%;
     box-shadow: 0px 5px 10px #D9D9D9;  
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .choix_hebergement p
 {
@@ -420,13 +442,13 @@ section a
     margin-right: 20px;
     height: auto;
     border-radius: 20px;   
-    padding-top: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 .vignette_pop
 {
     width: auto;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -440,7 +462,7 @@ section a
 }
 .titre_pop_etlogo
 {  
-    margin: 0px 20px 20px 20px; 
+    margin: 0px 20px 0px 20px; 
     width: auto;
     display: flex;
     flex-direction: row;

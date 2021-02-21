@@ -73,30 +73,29 @@
     {
         font-size: 1.3em;
     }
-    input
+    
+    table 
     {
-        margin-top: 20px;
-        width: 200px;
+        width: auto;
+    }
+    td:nth-child(3)
+    {
+        width: 30px;
+        position: relative;
     }
     .bouton_rechercher
     {
-        padding-right: 5px;
-        padding-left: 5px;
         width: 50px;
-        height: 45px;
-        border-radius: 10px;
-        margin-left: -15px;  
-        position: relative; 
-        color:#0065FC;
+        color: #0065FC;
+        position: relative;
     }
-    p .fa-search
+    td .fa-search
     {
-        position: absolute;
-        left: 265px;
-        top: 35px;
-        color: white; 
         display: inline-block;
-        width: auto;
+        position: absolute;
+        left: 18px;
+        top: 13px;
+        color: white;
     }
     #filtre_bloc
     {
@@ -120,6 +119,7 @@
         width: 35%;
         margin-right: 20px;
         margin-left: 20px;
+        margin-bottom: 10px;
     }
     .filtre_rom
     {

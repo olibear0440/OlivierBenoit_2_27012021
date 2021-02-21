@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="p2_02_styles_maqreservia.css">
-        <link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 480px)" href="p2_03_styles_responsive_maqreservia.css">
+        <link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 481px)" href="p2_03_styles_responsive_maqreservia.css">
         <link rel="stylesheet" media="screen and (max-width: 480px)" href="p2_04_styles_responsive_maqreservia.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css">
@@ -34,14 +34,22 @@
             </div>
 <!--formulaire de recherche-->
             <div id="bloc_recherche">
-                <form method="POST" action="#">
-                <p>
-                <span class="fas fa-map-marker-alt"></span>
-                <label for="saisieclient"></label>
-                <input type="text" name="saisieclient" id="saisieclient">
-                <input class="bouton_rechercher" type="submit" value="Rechercher">
-                <span class="fas fa-search"></span>
-                </p>
+                <form method="POST" action="#"> 
+                <table>
+                    <tr>
+                         <td>
+                            <span class="fas fa-map-marker-alt"></span>
+                            <label for="saisieclient"></label>
+                        </td>
+                        <td>
+                            <input type="text" name="saisieclient" id="saisieclient">
+                        </td>
+                        <td>
+                            <input class="bouton_rechercher" type="submit" value="Rechercher">
+                            <span class="fas fa-search"></span>
+                        </td>
+                    </tr>
+                </table>
                 </form>
             </div>
 <!--bloc des filtres-->
