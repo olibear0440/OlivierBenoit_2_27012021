@@ -86,7 +86,8 @@
     .bouton_rechercher
     {
         width: 50px;
-        color: #0065FC;
+        color: transparent;
+
         position: relative;
     }
     td .fa-search
